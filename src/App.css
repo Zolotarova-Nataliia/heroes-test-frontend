@@ -1,0 +1,173 @@
+.item a {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  width: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .item a {
+    width: 40px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.disabled-page {
+  color: #025d6e;
+}
+
+.active {
+  border: solid 1px #025d6e;
+  border-radius: 40px;
+  color: #ffff;
+}
+
+.break-me {
+}
+
+.item.next {
+  position: absolute;
+  right: 0;
+}
+
+.item.next a {
+  border-left: solid 1px #025d6e;
+  font-size: 4px;
+  height: 60px;
+  width: 40px;
+}
+
+.pagination {
+  align-items: center;
+  background-color: #007180;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+}
+
+.pagination-page {
+  font-weight: 700;
+}
+
+.item.previous {
+  left: 0;
+  position: absolute;
+}
+
+.item.previous a {
+  border-right: solid 1px #025d6e;
+  height: 60px;
+  width: 40px;
+}
+
+.next svg polyline {
+  stroke: #ffffff !important;
+}
+.next svg {
+  width: 100%;
+  height: 40px;
+}
+.previous svg polyline {
+  stroke: #ffffff !important;
+}
+.previous svg {
+  width: 100%;
+  height: 40px;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.--is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  border: none;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#root {
+  height: 100%;
+}
